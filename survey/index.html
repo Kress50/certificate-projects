@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1 id="title">Favorite color survey</h1>
+    <p id="description">
+      In this survey try to answer to the best of your natural ability without
+      using external tools, like <strong>calculators</strong> or the
+      <strong>M6-class neural link activators.</strong>
+    </p>
+    <p>
+      Please be aware that answering incorrectly or answering for the purpose of
+      corporate sabotage against the Integra Systems is not allowed as per
+      chapter 34 section 3 of your work contract.
+    </p>
+
+    <form action="#" id="survey-form">
+      <label for="name" id="name-label">Full name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="James Holden"
+      />
+
+      <label for="email" id="email-label">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="jameshold@king.com"
+      />
+
+      <label for="bananas" id="number-label"
+        >Enter the number of bananas you've eaten in the last 3 sol
+        units:</label
+      >
+      <input
+        type="number"
+        id="bananas"
+        required
+        name="bananas_number"
+        min="0"
+        max="17"
+        placeholder="1"
+      />
+      <label for="dropdown" id="dropdown"
+        >Please specify your emotional state</label
+      >
+      <select name="dropdown_option" id="dropdown" required>
+        <option value="happy">Happy</option>
+        <option value="cautious">Cautious</option>
+        <option value="euphoric">Euphoric</option>
+        <option value="trying">Trying your best</option>
+        <option value="fear">Terrified</option>
+      </select>
+      <label for="fav_color" id="fav_color"
+        >Please select your favorite color:</label
+      >
+      <input type="radio" name="Green" id="fav-color" />
+    </form>
+  </body>
+</html>
