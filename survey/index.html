@@ -7,16 +7,17 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="main.css" />
   </head>
+
   <body>
     <h1 id="title">Favorite color survey</h1>
     <p id="description">
       In this survey try to answer to the best of your natural ability without
-      using external tools, like <strong>calculators</strong> or the
-      <strong>M6-class neural link activators.</strong>
+      using external tools, like calculators or the M6-class neural link
+      activators.
     </p>
     <p>
       Please be aware that answering incorrectly or answering for the purpose of
-      corporate sabotage against the Integra Systems is not allowed as per
+      corporate sabotage against the Low Integra Systems is not allowed as per
       chapter 34 section 3 of your work contract.
     </p>
 
@@ -27,7 +28,7 @@
         id="name"
         name="name"
         required
-        placeholder="James Holden"
+        placeholder="Placeholder Name"
       />
 
       <label for="email" id="email-label">Email:</label>
@@ -36,16 +37,15 @@
         id="email"
         name="email"
         required
-        placeholder="jameshold@king.com"
+        placeholder="placeholder-name@survey.org"
       />
 
-      <label for="bananas" id="number-label"
-        >Enter the number of bananas you've eaten in the last 3 sol
-        units:</label
+      <label for="number" id="number-label"
+        >Enter the number of bananas you've eaten in the last 3 days:</label
       >
       <input
         type="number"
-        id="bananas"
+        id="number"
         required
         name="bananas_number"
         min="0"
@@ -65,8 +65,43 @@
       <label for="fav_color" id="fav_color"
         >Please select your favorite color:</label
       >
-      <p>blue</p>
-      <input type="radio" name="Green" id="fav-color" />
+      <div>
+        <input type="radio" id="green" name="color" value="green" checked />
+        <label for="green">Green</label>
+      </div>
+
+      <div>
+        <input type="radio" id="pink" name="color" value="pink" />
+        <label for="pink">Pink</label>
+      </div>
+
+      <div>
+        <input type="radio" id="yellow" name="color" value="yellow" />
+        <label for="yellow">Yellow</label>
+      </div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae iusto
+        distinctio impedit rem, officia qui nemo, cum soluta nisi sed dicta a
+        quae voluptas. Dignissimos mollitia porro cupiditate id vero?
+      </p>
+      <div>
+        <input type="checkbox" id="amet" name="amet" checked value="lorem" />
+        <label for="amet">Amet</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="elit" name="elit" value="lorem" />
+        <label for="elit">Elit</label>
+      </div>
+
+      <label for="questions"
+        >If you have additional questions regarding this questionnaire please
+        write them below:
+      </label>
+      <textarea id="questions" name="questions" rows="5" cols="30">
+Additional question should go here...</textarea
+      >
+      <input type="submit" id="submit" />
     </form>
   </body>
 </html>
