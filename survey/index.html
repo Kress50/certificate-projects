@@ -1,107 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
 
-  <body>
-    <h1 id="title">Favorite color survey</h1>
-    <p id="description">
-      In this survey try to answer to the best of your natural ability without
-      using external tools, like calculators or the M6-class neural link
-      activators.
-    </p>
-    <p>
-      Please be aware that answering incorrectly or answering for the purpose of
-      corporate sabotage against the Low Integra Systems is not allowed as per
-      chapter 34 section 3 of your work contract.
-    </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TetraTech Survey</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <form action="#" id="survey-form">
-      <label for="name" id="name-label">Full name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required
-        placeholder="Placeholder Name"
-      />
-
-      <label for="email" id="email-label">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="placeholder-name@survey.org"
-      />
-
-      <label for="number" id="number-label"
-        >Enter the number of bananas you've eaten in the last 3 days:</label
-      >
-      <input
-        type="number"
-        id="number"
-        required
-        name="bananas_number"
-        min="0"
-        max="17"
-        placeholder="1"
-      />
-      <label for="dropdown" id="dropdown"
-        >Please specify your emotional state</label
-      >
-      <select name="dropdown_option" id="dropdown" required>
-        <option value="happy">Happy</option>
-        <option value="cautious">Cautious</option>
-        <option value="euphoric">Euphoric</option>
-        <option value="trying">Trying your best</option>
-        <option value="fear">Terrified</option>
-      </select>
-      <label for="fav_color" id="fav_color"
-        >Please select your favorite color:</label
-      >
-      <div>
-        <input type="radio" id="green" name="color" value="green" checked />
-        <label for="green">Green</label>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a class="logo-link" href="index.html">TetraTech <br> Solutions</a>
       </div>
-
-      <div>
-        <input type="radio" id="pink" name="color" value="pink" />
-        <label for="pink">Pink</label>
-      </div>
-
-      <div>
-        <input type="radio" id="yellow" name="color" value="yellow" />
-        <label for="yellow">Yellow</label>
-      </div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae iusto
-        distinctio impedit rem, officia qui nemo, cum soluta nisi sed dicta a
-        quae voluptas. Dignissimos mollitia porro cupiditate id vero?
+      <h1 id="title">Survey Form</h1>
+      <div></div>
+    </header>
+    <section class="explanation">
+      <p id="description">
+        Thank you for using TetraTech products. Please share your opinion about
+        our software so we could improve it for your business!
       </p>
-      <div>
-        <input type="checkbox" id="amet" name="amet" checked value="lorem" />
-        <label for="amet">Amet</label>
+    </section>
+    <form id="survey-form" action="">
+      <div class="company-info">
+        <label for="name" id="name-label"> Enter your name: </label><input id="name" name="name" type="text" required
+          placeholder="John Doe" />
+        <label for="email" id="email-label">Enter your e-mail: </label><input id="email" name="email" type="email"
+          required placeholder="johndoe@tetratech.com">
+        <label for="company-name" id="company-name-label">Enter your company name: </label><input id="company-name"
+          name="company-name" type="text" required placeholder="TetraTech">
+        <label for="number" id="number-label">For how long (in years) have your company been using TetraTech
+          products: </label><input id="number" name="company-number-age" type="number" required min="1" max="7"
+          placeholder="1">
       </div>
-
-      <div>
-        <input type="checkbox" id="elit" name="elit" value="lorem" />
-        <label for="elit">Elit</label>
+      <div class="survey-value">
+        <label for="dropdown" id="select-label">Select the size of your company: </label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="small">Small: 2-20 employees</option>
+          <option value="medium">Medium: 21-99 employees</option>
+          <option value="large">Large: 100+ employees</option>
+        </select>
+        <p id="tetratech-products">Please select what kind of TetraTech products are you using within your
+          company (you can select several):</p>
+        <div class="product-inputs">
+          <div class="product-checkbox">
+            <input class="checkbox" id="checkbox1" type="checkbox" name="timeowt" value="timeowt">
+            <label for="checkbox1">TimeOwt</label></div>
+          <div class="product-checkbox">
+            <input class="checkbox" id="checkbox2" type="checkbox" name="tetraoffice" value="tetraoffice">
+            <label for="checkbox2">TetraOffice</label></div>
+          <div class="product-checkbox">
+            <input class="checkbox" id="checkbox3" type="checkbox" \survey\index.htmlname="tetraphotos"
+              value="tetraphotos">
+            <label for="checkbox3">TetraPhotos</label></div>
+          <div class="product-checkbox">
+            <input class="checkbox" id="checkbox4" type="checkbox" name="schedulee" value="schedulee">
+            <label for="checkbox4">Schedulee</label></div>
+        </div>
+        <p id="tetratech-recommendation">Please select your level of satisfaction with TetraTech product (you can only
+          select one):</p>
+        <div class="radio-inputs">
+          <input type="radio" id="very-unlikely" value="very-unlikely" name="recommendation"> <label
+            for="very-unlikely">Very Unlikely</label>
+          <input type="radio" id="unlikely" value="unlikely" name="recommendation"> <label
+            for="unlikely">Unlikely</label>
+          <input type="radio" id="neutral" value="neutral" name="recommendation"> <label for="neutral">Undecided</label>
+          <input type="radio" id="likely" value="likely" name="recommendation"> <label for="likely">Likely</label>
+          <input type="radio" id="very-likely" value="very-likely" name="recommendation"> <label for="very-likely">Very
+            Likely</label>
+        </div>
+        <label class="label-textarea" for="textarea">Please, feel free to provide additional information about your
+          usage of
+          TetraTech products: </label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
       </div>
-
-      <label for="questions"
-        >If you have additional questions regarding this questionnaire please
-        write them below:
-      </label>
-      <textarea id="questions" name="questions" rows="5" cols="30">
-Additional question should go here...</textarea
-      >
-      <input type="submit" id="submit" />
+      <button type="submit" id="submit">Submit</button>
     </form>
-  </body>
+    <footer class="footer">
+      <div class="logo">
+        <a class="logo-link" href="index.html">TetraTech <br> Solutions</a>
+      </div>
+      <div class="address">
+        <p>(301) 431-0367 <br>
+          9804 Riggs Rd <br>
+          Hyattsville, Maryland(MD), 20783</p>
+      </div>
+      <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
