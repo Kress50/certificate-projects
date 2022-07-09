@@ -397,6 +397,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 16px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .nav-stack a {
   padding: 8px 16px;
@@ -410,6 +414,12 @@ body {
   background-color: #920031;
   color: #fffefe;
   border-top: 2px solid #920031;
+}
+.nav-stack .slider {
+  display: none;
+}
+.nav-stack .slider-selector:hover .slider {
+  display: block !important;
 }
 
 .technical_documentation {

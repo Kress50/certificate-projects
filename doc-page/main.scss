@@ -455,6 +455,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 16px 00;
+	user-select: none;
 	a {
 		padding: 8px 16px;
 		border-top: 2px solid $color-accent;
@@ -469,6 +470,16 @@ body {
 		background-color: $color-accent-darken;
 		color: $color-whitespace;
 		border-top: 2px solid $color-accent-darken;
+	}
+
+	.slider {
+		display: none;
+	}
+
+	.slider-selector:hover {
+		.slider {
+			display: block !important;
+		}
 	}
 }
 

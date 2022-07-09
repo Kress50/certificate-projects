@@ -1,102 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TetraTech Survey</title>
+		<link rel="stylesheet" href="main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TetraTech Survey</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <a class="logo-link" href="index.html">TetraTech <br> Solutions</a>
-      </div>
-      <h1 id="title">Survey Form</h1>
-      <div></div>
-    </header>
-    <section class="explanation">
-      <p id="description">
-        Thank you for using TetraTech products. Please share your opinion about
-        our software so we could improve it for your business!
-      </p>
-    </section>
-    <form id="survey-form" action="">
-      <div class="company-info">
-        <label for="name" id="name-label"> Enter your name: </label><input id="name" name="name" type="text" required
-          placeholder="John Doe" />
-        <label for="email" id="email-label">Enter your e-mail: </label><input id="email" name="email" type="email"
-          required placeholder="johndoe@tetratech.com">
-        <label for="company-name" id="company-name-label">Enter your company name: </label><input id="company-name"
-          name="company-name" type="text" required placeholder="TetraTech">
-        <label for="number" id="number-label">For how long (in years) have your company been using TetraTech
-          products: </label><input id="number" name="company-number-age" type="number" required min="1" max="7"
-          placeholder="1">
-      </div>
-      <div class="survey-value">
-        <label for="dropdown" id="select-label">Select the size of your company: </label>
-        <select id="dropdown" name="dropdown" required>
-          <option value="small">Small: 2-20 employees</option>
-          <option value="medium">Medium: 21-99 employees</option>
-          <option value="large">Large: 100+ employees</option>
-        </select>
-        <p id="tetratech-products">Please select what kind of TetraTech products are you using within your
-          company (you can select several):</p>
-        <div class="product-inputs">
-          <div class="product-checkbox">
-            <input class="checkbox" id="checkbox1" type="checkbox" name="timeowt" value="timeowt">
-            <label for="checkbox1">TimeOwt</label></div>
-          <div class="product-checkbox">
-            <input class="checkbox" id="checkbox2" type="checkbox" name="tetraoffice" value="tetraoffice">
-            <label for="checkbox2">TetraOffice</label></div>
-          <div class="product-checkbox">
-            <input class="checkbox" id="checkbox3" type="checkbox" \survey\index.htmlname="tetraphotos"
-              value="tetraphotos">
-            <label for="checkbox3">TetraPhotos</label></div>
-          <div class="product-checkbox">
-            <input class="checkbox" id="checkbox4" type="checkbox" name="schedulee" value="schedulee">
-            <label for="checkbox4">Schedulee</label></div>
-        </div>
-        <p id="tetratech-recommendation">Please select your level of satisfaction with TetraTech product (you can only
-          select one):</p>
-        <div class="radio-inputs">
-          <input type="radio" id="very-unlikely" value="very-unlikely" name="recommendation"> <label
-            for="very-unlikely">Very Unlikely</label>
-          <input type="radio" id="unlikely" value="unlikely" name="recommendation"> <label
-            for="unlikely">Unlikely</label>
-          <input type="radio" id="neutral" value="neutral" name="recommendation"> <label for="neutral">Undecided</label>
-          <input type="radio" id="likely" value="likely" name="recommendation"> <label for="likely">Likely</label>
-          <input type="radio" id="very-likely" value="very-likely" name="recommendation"> <label for="very-likely">Very
-            Likely</label>
-        </div>
-        <label class="label-textarea" for="textarea">Please, feel free to provide additional information about your
-          usage of
-          TetraTech products: </label>
-        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
-      </div>
-      <button type="submit" id="submit">Submit</button>
-    </form>
-    <footer class="footer">
-      <div class="logo">
-        <a class="logo-link" href="index.html">TetraTech <br> Solutions</a>
-      </div>
-      <div class="address">
-        <p>(301) 431-0367 <br>
-          9804 Riggs Rd <br>
-          Hyattsville, Maryland(MD), 20783</p>
-      </div>
-      <div class="social">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-      </div>
-    </footer>
-  </div>
-</body>
-
+	<body>
+		<div class="container">
+			<header>
+				<div class="logo">
+					<a class="logo-link" href="index.html"
+						>TetraTech <br />
+						Solutions</a
+					>
+				</div>
+				<h1 id="title">Survey Form</h1>
+				<div></div>
+			</header>
+			<section class="explanation">
+				<p id="description">
+					Thank you for using TetraTech products. Please share your opinion
+					about our software so we could improve it for your business!
+				</p>
+			</section>
+			<form id="survey-form" action="">
+				<div class="company-info">
+					<label for="name" id="name-label"> Enter your name: </label
+					><input
+						id="name"
+						name="name"
+						type="text"
+						required
+						placeholder="John Doe"
+					/>
+					<label for="email" id="email-label">Enter your e-mail: </label
+					><input
+						id="email"
+						name="email"
+						type="email"
+						required
+						placeholder="johndoe@tetratech.com"
+					/>
+					<label for="company-name" id="company-name-label"
+						>Enter your company name: </label
+					><input
+						id="company-name"
+						name="company-name"
+						type="text"
+						required
+						placeholder="TetraTech"
+					/>
+					<label for="number" id="number-label"
+						>For how long (in years) have your company been using TetraTech
+						products: </label
+					><input
+						id="number"
+						name="company-number-age"
+						type="number"
+						required
+						min="1"
+						max="7"
+						placeholder="1"
+					/>
+				</div>
+				<div class="survey-value">
+					<label for="dropdown" id="select-label"
+						>Select the size of your company:
+					</label>
+					<select id="dropdown" name="dropdown" required>
+						<option value="small">Small: 2-20 employees</option>
+						<option value="medium">Medium: 21-99 employees</option>
+						<option value="large">Large: 100+ employees</option>
+					</select>
+					<p id="tetratech-products">
+						Please select what kind of TetraTech products are you using within
+						your company (you can select several):
+					</p>
+					<div class="product-inputs">
+						<div class="product-checkbox">
+							<input
+								class="checkbox"
+								id="checkbox1"
+								type="checkbox"
+								name="timeowt"
+								value="timeowt"
+							/>
+							<label for="checkbox1">TimeOwt</label>
+						</div>
+						<div class="product-checkbox">
+							<input
+								class="checkbox"
+								id="checkbox2"
+								type="checkbox"
+								name="tetraoffice"
+								value="tetraoffice"
+							/>
+							<label for="checkbox2">TetraOffice</label>
+						</div>
+						<div class="product-checkbox">
+							<input
+								class="checkbox"
+								id="checkbox3"
+								type="checkbox"
+								\survey\index.htmlname="tetraphotos"
+								value="tetraphotos"
+							/>
+							<label for="checkbox3">TetraPhotos</label>
+						</div>
+						<div class="product-checkbox">
+							<input
+								class="checkbox"
+								id="checkbox4"
+								type="checkbox"
+								name="schedulee"
+								value="schedulee"
+							/>
+							<label for="checkbox4">Schedulee</label>
+						</div>
+					</div>
+					<p id="tetratech-recommendation">
+						Please select your level of satisfaction with TetraTech product (you
+						can only select one):
+					</p>
+					<div class="radio-inputs">
+						<input
+							type="radio"
+							id="very-unlikely"
+							value="very-unlikely"
+							name="recommendation"
+						/>
+						<label for="very-unlikely">Very Unlikely</label>
+						<input
+							type="radio"
+							id="unlikely"
+							value="unlikely"
+							name="recommendation"
+						/>
+						<label for="unlikely">Unlikely</label>
+						<input
+							type="radio"
+							id="neutral"
+							value="neutral"
+							name="recommendation"
+						/>
+						<label for="neutral">Undecided</label>
+						<input
+							type="radio"
+							id="likely"
+							value="likely"
+							name="recommendation"
+						/>
+						<label for="likely">Likely</label>
+						<input
+							type="radio"
+							id="very-likely"
+							value="very-likely"
+							name="recommendation"
+						/>
+						<label for="very-likely">Very Likely</label>
+					</div>
+					<label class="label-textarea" for="textarea"
+						>Please, feel free to provide additional information about your
+						usage of TetraTech products:
+					</label>
+					<textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+				</div>
+				<button type="submit" id="submit">Submit</button>
+			</form>
+			<footer class="footer">
+				<div class="logo">
+					<a class="logo-link" href="index.html"
+						>TetraTech <br />
+						Solutions</a
+					>
+				</div>
+				<div class="address">
+					<p>
+						(301) 431-0367 <br />
+						9804 Riggs Rd <br />
+						Hyattsville, Maryland(MD), 20783
+					</p>
+				</div>
+				<div class="social">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
