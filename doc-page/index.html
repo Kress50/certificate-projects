@@ -7,10 +7,6 @@
 		<title>TetraTech Technical Documentation</title>
 		<link rel="stylesheet" href="main.css" />
 		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700"
 			rel="stylesheet"
 		/>
@@ -27,7 +23,8 @@
 						TetraTech Technical Documentation on Technical Documentation
 					</header>
 				</div>
-
+				<input type="checkbox" id="menu-box" />
+				<label for="menu-box" class="menu">Navigation</label>
 				<div class="nav-stack">
 					<a
 						class="nav-link"
@@ -52,21 +49,21 @@
 					>
 					<div class="slider">
 						<ul>
-							<li>
-								<a href="#schemas"
-									>Use templates or “schemas” for consistent on-page design</a
-								>
-							</li>
-							<li>
-								<a href="#simple_logical_navigation_structure"
-									>Create a simple, logical navigation structure</a
-								>
-							</li>
+							<li>Use templates or “schemas” for consistent on-page design</li>
+							<li>Create a simple, logical navigation structure</li>
 						</ul>
 					</div>
-					<a class="nav-link" href="#step_3:_create_the_content"
+					<a class="nav-link slider-selector" href="#step_3:_create_the_content"
 						>Step 3: Create the content</a
 					>
+					<div class="slider">
+						<ul>
+							<li>Start with a draft</li>
+							<li>Use the 30/90 rule to get feedback</li>
+							<li>Get peer reviews and make revisions</li>
+							<li>Edit, edit, and edit some more</li>
+						</ul>
+					</div>
 					<a class="nav-link" href="#step_4:_deliver_and_test"
 						>Step 4: Deliver and test</a
 					>
@@ -276,7 +273,7 @@
 						and navigate, what documents are linked or connected, etc...)
 					</p>
 					<p>Here are a few quick tips for each:</p>
-					<header class="description" id="schemas">
+					<header class="description">
 						Use templates or “schemas” for consistent on-page design
 					</header>
 					<p>
@@ -327,6 +324,7 @@
 							Related documents that might help the user
 						</li>
 					</ul>
+					<p>
 						In this template, the user knows exactly what they’re reading, gets
 						a short overview of what the document covers, and then has a table
 						of contents outlining each step so they can jump to the most
@@ -337,7 +335,7 @@
 						find information more quickly, but it will let you know if you have
 						all the information you need to keep your content consistent.
 					</p>
-					<header class="description" id="simple_logical_navigation_structure">
+					<header class="description">
 						Create a simple, logical navigation structure
 					</header>
 					<p>
@@ -378,9 +376,7 @@
 						in and start writing. Here’s the easiest way to make sure what
 						you’re creating is useful, valuable, and clear:
 					</p>
-					<header class="description" id="start_with_the_draft">
-						Start with a draft
-					</header>
+					<header class="description">Start with a draft</header>
 					<p>
 						Using the information in your documentation plan, you can start to
 						sketch out a high-level outline for each of the topics you’ll be
@@ -449,7 +445,7 @@
 							explain it.
 						</li>
 					</ol>
-					<header class="description" id="thirty_ninety_rule">
+					<header class="description">
 						Use the 30/90 rule to get feedback
 					</header>
 					<p>
@@ -484,7 +480,7 @@
 						have any nasty surprises when you go to submit your final
 						documentation.
 					</p>
-					<header class="description" id="peer_reviews_revisions">
+					<header class="description">
 						Get peer reviews and make revisions
 					</header>
 					<p>
@@ -504,9 +500,7 @@
 						within your company got lost following your directions, a total
 						outsider doesn’t have a chance.
 					</p>
-					<header class="description" id="edit_more_edit">
-						Edit, edit, and edit some more
-					</header>
+					<header class="description">Edit, edit, and edit some more</header>
 					<p>
 						Good writing comes down to editing. With your feedback and revisions
 						in place, break out your style guides and either edit the

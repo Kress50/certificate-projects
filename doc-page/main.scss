@@ -451,6 +451,11 @@ body {
 	}
 }
 
+input,
+label {
+	display: none;
+}
+
 .nav-stack {
 	display: flex;
 	flex-direction: column;
@@ -472,13 +477,25 @@ body {
 		border-top: 2px solid $color-accent-darken;
 	}
 
-	.slider {
-		display: none;
+	.slider-selector:hover + .slider {
+		display: flex;
+		line-height: 24px;
 	}
 
-	.slider-selector:hover {
-		.slider {
-			display: block !important;
+	.slider {
+		display: none;
+
+		li {
+			list-style: none;
+		}
+
+		li:before {
+			content: "\2022";
+			color: $color-accent;
+			font-weight: bold;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em;
 		}
 	}
 }
@@ -503,6 +520,7 @@ section {
 		font-size: 2rem;
 		font-weight: bold;
 		margin: 32px 0;
+		text-align: left;
 	}
 
 	.description:first-child {
@@ -528,12 +546,92 @@ section + section {
 
 img {
 	display: block;
-	width: auto;
-	height: 500px;
+	width: 600px;
+	height: auto;
 	padding: 32px 0;
 	margin: auto;
 }
 
 code {
 	display: none;
+}
+
+@media (max-width: 1100px) {
+	img {
+		width: 400px;
+	}
+}
+
+@media (max-width: 900px) {
+	#main-doc {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		border-right: none;
+		min-width: 100%;
+		min-height: 0%;
+
+		#menu-box {
+			display: none;
+		}
+
+		.menu {
+			display: inline-block;
+			border: 1px solid $color-accent;
+			padding: 8px;
+			background-color: $color-accent;
+			color: $color-whitespace;
+			font-weight: bold;
+			text-align: center;
+			user-select: none;
+			transition: all 250ms ease-out;
+		}
+
+		.menu:hover {
+			background-color: $color-accent-darken;
+			border: 1px solid $color-accent-darken;
+		}
+
+		.nav-stack {
+			text-align: left;
+			margin: 0;
+			max-height: 0px;
+			overflow: hidden;
+			border-top: none;
+			border-bottom: 1px solid $color-accent;
+		}
+
+		input:checked ~ .nav-stack {
+			max-height: 100%;
+			background-color: #e6e6e652;
+		}
+	}
+
+	.navbar-top {
+		flex-direction: row;
+		padding: 16px 16px;
+		border-bottom: 1px solid $color-accent;
+
+		.logo {
+			font-size: 1.3rem;
+			margin: auto 0;
+		}
+
+		header {
+			font-size: 1.1rem;
+			padding-left: 16px;
+			margin: auto 0;
+		}
+	}
+
+	.technical_documentation {
+		position: relative;
+		margin: 128px 0px 32px 0px;
+		max-width: 100%;
+		padding: 0;
+	}
 }
