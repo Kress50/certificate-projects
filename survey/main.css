@@ -64,7 +64,6 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
 *::before,
 *::after {
@@ -301,7 +300,6 @@ button:focus {
   header {
     padding: 32px 32px;
   }
-
   #survey-form .survey-value .product-inputs {
     display: grid;
     grid-column: span 2;
@@ -319,15 +317,12 @@ button:focus {
   .logo {
     display: none;
   }
-
   #title {
     padding-left: 32px;
   }
-
   #description {
     padding: 16px 32px;
   }
-
   #survey-form .company-info {
     grid-template-columns: 1fr;
   }
@@ -348,12 +343,10 @@ button:focus {
     row-gap: 1em;
     justify-self: center;
   }
-
   .footer .social {
     font-size: 3rem;
     padding-left: 16px;
   }
-
   textarea {
     width: 100%;
   }
@@ -362,7 +355,6 @@ button:focus {
   #title {
     padding-left: 0px;
   }
-
   .footer .social {
     font-size: 2rem;
     padding-left: 16px;

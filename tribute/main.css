@@ -63,7 +63,6 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
 *::before,
 *::after {
@@ -270,11 +269,9 @@ header {
   body {
     margin: 0 32px;
   }
-
   header {
     margin: 0 32px;
   }
-
   .about-us-img {
     padding: 32px;
   }
@@ -301,15 +298,12 @@ header {
   .logo {
     display: none;
   }
-
   .tabs {
     margin: 0 auto 16px auto;
   }
-
   .about-us {
     margin-top: 128px;
   }
-
   .one,
 .two,
 .three {
@@ -320,7 +314,6 @@ header {
 .three .tribute {
     padding-left: 32px;
   }
-
   .footer {
     grid-template-columns: 20% 80%;
   }
@@ -329,25 +322,21 @@ header {
   header {
     position: absolute;
   }
-
   .tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 1rem;
     text-align: center;
   }
-
   .about-us .about-us-text h1 {
     font-size: 2rem;
   }
   .about-us .about-us-text p {
     font-size: 1rem;
   }
-
   .portrait .title {
     font-size: 2rem;
   }
-
   .one .tribute,
 .two .tribute,
 .three .tribute {
