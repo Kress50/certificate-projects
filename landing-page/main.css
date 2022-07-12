@@ -548,11 +548,16 @@ i {
 }
 
 .product-card {
+  width: 280px;
   outline: 8px solid #f50053;
   box-shadow: #920031 24px 24px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .product-card h2 {
   margin: 0px;
@@ -597,7 +602,7 @@ i {
   color: #fffefe;
   background-color: #f50053;
 }
-.product-card .select-btn:focus {
+.product-card .select-btn:active {
   background-color: #920031;
   border: 3px solid #920031;
 }
@@ -619,7 +624,79 @@ i {
   color: #fffefe;
   background-color: #2760fd;
 }
-#tetraoffice .select-btn:focus {
+#tetraoffice .select-btn:active {
   background-color: #0f2460;
   border: 3px solid #0f2460;
+}
+
+.pre-test {
+  color: #f50053;
+  font-family: "Ubuntu", Sans-Serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 64px 0px 64px 0px;
+  border-top: 3px solid #920031;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonies {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.testimony-card {
+  background-color: #8d8d8d;
+  color: #fffefe;
+  width: 250px;
+  padding: 16px;
+}
+
+.testimonials-top {
+  display: flex;
+  gap: 16px;
+  font-size: 1.3rem;
+}
+
+.testimony-img {
+  height: 64px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+.footer {
+  padding: 16px 0 32px 0;
+  border-top: 2px solid #8d8d8d;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .footer-right {
+  display: flex;
+}
+.footer .footer-right .logo {
+  justify-self: right;
+}
+.footer .footer-right img {
+  height: 64px;
+  margin: auto 0;
+}
+.footer .footer-right .address {
+  padding-left: 32px;
+  margin: auto 0;
+}
+.footer .socials {
+  justify-self: right;
+  font-size: 2rem;
+  margin: auto 0;
+  word-spacing: 64px;
+}
+.footer .socials :hover {
+  color: #f50053;
+}
+.footer .socials :active {
+  color: #920031;
 }/*# sourceMappingURL=main.css.map */

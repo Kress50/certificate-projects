@@ -594,11 +594,13 @@ i {
 }
 
 .product-card {
+	width: 280px;
 	outline: 8px solid $color-accent;
 	box-shadow: $color-accent-darken 24px 24px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	user-select: none;
 
 	h2 {
 		margin: 0px;
@@ -646,7 +648,7 @@ i {
 		background-color: $color-accent;
 	}
 
-	.select-btn:focus {
+	.select-btn:active {
 		background-color: $color-accent-darken;
 		border: 3px solid $color-accent-darken;
 	}
@@ -672,8 +674,85 @@ i {
 		background-color: $color-primary-lighten;
 	}
 
-	.select-btn:focus {
+	.select-btn:active {
 		background-color: $color-primary;
 		border: 3px solid $color-primary;
+	}
+}
+
+.pre-test {
+	color: $color-accent;
+	font-family: $font-stack-logo;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 64px 0px 64px 0px;
+	border-top: 3px solid $color-accent-darken;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.testimonies {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	justify-content: space-evenly;
+}
+
+.testimony-card {
+	background-color: $color-whitespace-darker;
+	color: $color-whitespace;
+	width: 250px;
+	padding: 16px;
+}
+
+.testimonials-top {
+	display: flex;
+	gap: 16px;
+	font-size: 1.3rem;
+}
+
+.testimony-img {
+	height: 64px;
+	clip-path: circle(50% at 50% 50%);
+}
+
+.footer {
+	padding: 16px 0 32px 0;
+	border-top: 2px solid $color-whitespace-darker;
+	display: flex;
+	justify-content: space-evenly;
+
+	.footer-right {
+		display: flex;
+		.logo {
+			justify-self: right;
+		}
+
+		img {
+			height: 64px;
+			margin: auto 0;
+		}
+
+		.address {
+			padding-left: 32px;
+			margin: auto 0;
+		}
+	}
+
+	.socials {
+		justify-self: right;
+		font-size: 2rem;
+		margin: auto 0;
+		word-spacing: 64px;
+
+		:hover {
+			color: $color-accent;
+		}
+
+		:active {
+			color: $color-accent-darken;
+		}
 	}
 }
