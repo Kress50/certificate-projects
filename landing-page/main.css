@@ -397,7 +397,7 @@ nav {
 nav :hover {
   color: #c9c9c9;
 }
-nav :focus {
+nav :active {
   color: #fffefe;
 }
 
@@ -411,7 +411,7 @@ nav :focus {
   display: flex;
   margin-top: 103px;
   margin: 103px auto 0 auto;
-  padding: 0 160px 0 160px;
+  padding: 0 32px 0 32px;
   -moz-column-gap: 56px;
        column-gap: 56px;
 }
@@ -431,6 +431,7 @@ h2 {
 h1 {
   font-weight: bold;
   font-size: 3rem;
+  line-height: 56px;
 }
 
 #hero-img {
@@ -446,7 +447,8 @@ h1 {
   line-height: 32px;
   -moz-column-gap: 56px;
        column-gap: 56px;
-  padding: 256px 0;
+  padding: 256px 32px;
+  text-align: justify;
 }
 
 h2 {
@@ -637,23 +639,29 @@ i {
   text-align: center;
   padding: 64px 0px 64px 0px;
   border-top: 3px solid #920031;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .testimonies {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   justify-content: space-evenly;
+  margin-bottom: 256px;
 }
 
 .testimony-card {
-  background-color: #8d8d8d;
-  color: #fffefe;
+  background-color: #eaeaea;
+  border: 3px solid #f50053;
+  border-radius: 10px;
+  color: #0f2460;
   width: 250px;
   padding: 16px;
+  text-align: justify;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 16px 0;
 }
 
 .testimonials-top {
@@ -699,4 +707,154 @@ i {
 }
 .footer .socials :active {
   color: #920031;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 64px auto 128px auto;
+  max-width: 1200px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 64px;
+}
+.newsletter label {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Ubuntu", Sans-Serif;
+  font-weight: bold;
+  color: #f50053;
+  font-size: 2rem;
+}
+.newsletter input {
+  width: 300px;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 2px solid #920031;
+}
+
+#submit {
+  margin: 64px auto 16px auto;
+  background-color: #fffefe;
+  border: 3px solid #920031;
+  color: #920031;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-family: "Ubuntu", Sans-Serif;
+  text-align: center;
+  width: 156px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#submit:hover {
+  border: 3px solid #f50053;
+  color: #fffefe;
+  background-color: #f50053;
+}
+
+#submit:active {
+  background-color: #920031;
+  border: 3px solid #920031;
+}
+
+@media (max-width: 950px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #hero-img {
+    width: 400px;
+    height: 400px;
+  }
+  .hero {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .hero-left {
+    line-height: 24px;
+    font-size: 1.2rem;
+  }
+  .product-card-stack {
+    flex-direction: column;
+    padding: 124px 0;
+    row-gap: 64px;
+  }
+  .video-desc {
+    line-height: 24px;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    font-size: 1.2rem;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .hero-bg {
+    background: rgb(245, 0, 83);
+    background: linear-gradient(180deg, rgb(245, 0, 83) 30%, rgba(255, 254, 254, 0) 80%);
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  #hero-img {
+    width: auto;
+    height: auto;
+    max-width: 700px;
+  }
+  .hero-left {
+    color: #0f2460;
+  }
+  .video-desc {
+    flex-direction: column-reverse;
+    padding: 64px 32px;
+  }
+  iframe {
+    height: 300px;
+    width: auto;
+  }
+  .numbers {
+    padding: 32px 32px;
+  }
+  .features {
+    padding: 64px 32px;
+  }
+  .product-card-stack {
+    padding: 64px 32px;
+  }
+  .pre-test {
+    padding: 64px 32px;
+  }
+  .footer {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    margin: 0 auto;
+  }
+  header {
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+  header .logo-img {
+    margin: auto 0;
+  }
+  .logo-link {
+    text-align: left;
+    margin: 0;
+  }
+  nav {
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
 }/*# sourceMappingURL=main.css.map */
