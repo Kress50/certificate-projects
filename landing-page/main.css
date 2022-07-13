@@ -856,5 +856,7 @@ form {
   nav {
     margin: 0 auto;
     font-size: 1.2em;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
   }
 }/*# sourceMappingURL=main.css.map */
